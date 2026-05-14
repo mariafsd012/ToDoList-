@@ -5,7 +5,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+
+}
+
+.main-wrapper h1 {
+    color: #3C1950;
+}
+
+.logo-img img {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: auto;
 }
 
 svg {
@@ -14,7 +29,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; 
+    z-index: -1;
     object-fit: cover;
 }
 
@@ -41,4 +56,5 @@ svg {
     font-size: 1.2rem;
     cursor: pointer;
     transition: transform 0.2s;
+    font-family: "Quicksand", sans-serif;
 }

@@ -7,11 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
     <title>TodoList</title>
 </head>
 
 <body>
+    
     <div class="main-wrapper">
         <svg id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <rect x="0" y="0" width="960" height="540" fill="#F0CDD2"></rect>
@@ -20,8 +24,16 @@
                 fill="#3C1950"></path>
         </svg>
 
+
+
         <div class="content-box">
+
             <h1>Bem-vindo ao TodoList</h1>
+
+            <div class="logo-img">
+                <img src="Preguiça.png" alt="Logo do TodoList">
+            </div>
+
             <p>Organize suas tarefas diárias de forma eficiente e fácil.</p>
 
             <div class="botoes">
@@ -33,14 +45,18 @@
     <script>
         const entrarBtn = document.getElementById('entrarBtn');
         entrarBtn.addEventListener('click', function () {
-        window.location.href = 'login.html';
+            window.location.href = 'login.html';
         });
 
-        /*a const identifica o botão "Entrar" usando seu ID e adiciona um 
+        
+
+        /*a const identifica o botão "Entrar" usando seu ID e adiciona um
         ouvinte de evento de clique. Quando o botão é clicado, a função 
         redireciona o usuário para a página "login.html" usando 
         window.location.href.*/
     </script>
+
+    
 </body>
 </body>
 

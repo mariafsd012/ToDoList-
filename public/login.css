@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #F0CDD2, #3C1950);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #3C1950;
+    font-family: "Quicksand", sans-serif;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao button {
+    background-color: #3C1950;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-family: "Quicksand", sans-serif;
+}
+
+.botao button:hover {
+    transform: scale(1.05);
+
+}
+
+.form-label {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    color: #3C1950;
+    font-family: "Quicksand", sans-serif;
+}
+
+input {
+    margin-bottom: 4px;
+}
+
+.cadastro-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #3C1950;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+}
