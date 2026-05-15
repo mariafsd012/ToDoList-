@@ -71,15 +71,11 @@ if (entrarBtn) {
     });
 }
 
-// ==========================
-// LISTA DE TAREFAS
-// ==========================
 
 const inputTarefa = document.querySelector('.nova-tarefa input');
 const botaoAdicionar = document.querySelector('.nova-tarefa button');
 const listaTarefas = document.querySelector('.lista-tarefas');
 
-// carregar tarefas salvas
 carregarTarefas();
 
 if (botaoAdicionar) {
@@ -103,7 +99,6 @@ function adicionarTarefa() {
     salvarTarefas();
 }
 
-// função que cria tarefa
 function criarTarefa(textoTarefa, concluida) {
 
     const tarefa = document.createElement('div');
@@ -125,7 +120,6 @@ function criarTarefa(textoTarefa, concluida) {
     const checkbox = tarefa.querySelector('.check-tarefa');
     const texto = tarefa.querySelector('span');
 
-    // verifica se já estava concluída
     checkbox.checked = concluida;
 
     if (concluida) {
@@ -133,7 +127,6 @@ function criarTarefa(textoTarefa, concluida) {
         texto.style.opacity = '0.6';
     }
 
-    // concluir tarefa
     checkbox.addEventListener('change', function () {
 
         if (checkbox.checked) {
@@ -150,7 +143,6 @@ function criarTarefa(textoTarefa, concluida) {
         salvarTarefas();
     });
 
-    // remover tarefa
     const btnRemover = tarefa.querySelector('.btn-remover');
 
     btnRemover.addEventListener('click', function () {
@@ -161,7 +153,6 @@ function criarTarefa(textoTarefa, concluida) {
     });
 }
 
-// salvar tarefas
 function salvarTarefas() {
 
     const tarefas = [];
@@ -183,7 +174,6 @@ function salvarTarefas() {
     localStorage.setItem('tarefas', JSON.stringify(tarefas));
 }
 
-// carregar tarefas
 function carregarTarefas() {
 
     const tarefasSalvas = JSON.parse(localStorage.getItem('tarefas')) || [];
