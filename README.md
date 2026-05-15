@@ -46,5 +46,5 @@ Um sistema de lista de tarefas desenvolvido com **HTML, CSS e JavaScript**, cont
 ## 🚀 Como executar o projeto
 
 ```bash
-git clone https://github.com/seu-usuario/to-do-list.git
+git clone https://github.com/mariafsd012/ToDoList-.git
 
